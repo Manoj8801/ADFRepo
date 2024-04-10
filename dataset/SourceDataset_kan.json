@@ -1,0 +1,84 @@
+{
+	"name": "SourceDataset_kan",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Customer_ID",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Occupation",
+				"type": "String"
+			},
+			{
+				"name": "Marital Status",
+				"type": "String"
+			},
+			{
+				"name": "Family Size",
+				"type": "String"
+			},
+			{
+				"name": "Income",
+				"type": "String"
+			},
+			{
+				"name": "Expenditure",
+				"type": "String"
+			},
+			{
+				"name": "Use Frequency",
+				"type": "String"
+			},
+			{
+				"name": "Loan Category",
+				"type": "String"
+			},
+			{
+				"name": "Debt",
+				"type": "String"
+			},
+			{
+				"name": "Overdue",
+				"type": "String"
+			},
+			{
+				"name": "Loan",
+				"type": "String"
+			},
+			{
+				"name": "Returned Cheque",
+				"type": "String"
+			},
+			{
+				"name": "Dishonour of Bill",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

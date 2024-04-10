@@ -1,0 +1,30 @@
+{
+	"name": "ds_productzip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blobconnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sample-zip-file.zip",
+				"container": "zipcontainer"
+			},
+			"columnDelimiter": ",",
+			"compressionCodec": "ZipDeflate",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PK\u0003\u0004\u0014\u0000\b\u0000\b\u0000u��P\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001a\u0001\u0000\u0000",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
